@@ -1,121 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOK YOUR TEST DRIVE!!!</title>
 </head>
 <style>
-    .fading {animation:fade-in 3s forwards ;-webkit-animation: fadeIn 5s;}
-    @keyframes fadein{0%{opacity: 0;}100%{opacity: 1;}}
+    .buttons{animation: fade-in 3s forwards;
+        -webkit-animation: fadeIn 5s;}
+    .fading {
+        animation: fade-in 3s forwards;
+        -webkit-animation: fadeIn 5s;
+    }
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     @-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-    
-    .container{background-color: black;
+        0% {
+            opacity: 0;
+        }
 
-    border: radius 0; height:100% ;padding: 1%;
-animation: comedown 1.5s ; -webkit-animation: comedown 1.5s;}
-@keyframes comedown 
-    {0%{transform: translateY(-100px);
-        opacity: 0;}
-    100%{transform: translateY(0) ;
-        opacity:1;}} 
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .container {
+        background-color: black;
+
+        border: radius 0;
+        height: 100%;
+        padding: 1%;
+        animation: comedown 1.5s;
+        -webkit-animation: comedown 1.5s;
+    }
+
+    @keyframes comedown {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
 
-    @-webkit-keyframes comedown {0%{transform: translateY(-100px);opacity: 0;}
-    100%{transform: translateY(0);opacity:1;}}
+    @-webkit-keyframes comedown {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
 
-    .img1 
-    {border-radius: 13px; display: block;margin-right: auto;margin-left: auto; margin-top: 0;
-        animation: comedown 1.5s ; -webkit-animation: comedown 1.5s;
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .img1 {
+        border-radius: 13px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+        animation: comedown 1.5s;
+        -webkit-animation: comedown 1.5s;
 
     }
-    @keyframes comedown 
-    {0%{transform: translateY(-20px);
-        opacity: 0;}
-    100%{transform: translateY(0) ;
-        opacity:1;}} 
 
+    @keyframes comedown {
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
 
-    @-webkit-keyframes comedown {0%{transform: translateY(-20px);opacity: 0;}
-    100%{transform: translateY(0);opacity:1;}}
-
-
-    img{display: block;margin-left: auto;margin-right: auto;margin-top: 7%; background-color: black;;
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
-    button {background-color: black;
-    border:rgb(255, 254, 254);
-    height: 50PX;
-    width: 115PX;
-    font-size: medium;
-    color: rgb(255, 255, 255);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 7px;
-    font-weight:lighter ;
-    display: block;margin-left: auto; margin-right: auto; margin-top: 40%;margin-bottom: 10px;
+
+
+    @-webkit-keyframes comedown {
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
-    button:hover {opacity: 40%;
-    cursor: pointer;}
-   h1 {background-color: black;}
-   .second{ position:absolute;
-   bottom: 655px;left: 70px;
-background-color:transparent;color: white; font-size: 150%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-weight:lighter;}
-    .third {position:absolute;
-   bottom: 655px;left: 350px;
-background-color:transparent;color: white; font-size: 150%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-weight:lighter;}
-    .fourth {position:absolute;
-   bottom: 655px;right: 70px;
-background-color:transparent;color: white; font-size: 150%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-weight:lighter;width: auto;}
-    .fifth{position:absolute;
-   bottom: 655px;right: 350px;
-background-color:transparent;color: white; font-size: 150%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-weight:lighter;width: auto;}
-pre{position: absolute;top: 200px; color: white; left:300px;right: 300px; ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-style: oblique;font-weight: lighter;}
-.PRE1{position: absolute;top: 1000px; color: white;left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-style:normal;font-weight: lighter; text-align: center;font-size: large;align-self: auto;}
+
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        background-color: black;
+        ;
+    }
+
+    button {
+        background-color: black;
+        border: rgb(255, 254, 254);
+        height: 50PX;
+        width: 115PX;
+        font-size: medium;
+        color: rgb(255, 255, 255);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 7px;
+        font-weight: lighter;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+        margin-bottom: 30px;
+    }
+
+    button:hover {
+        opacity: 40%;
+        cursor: pointer;
+    }
+
+    h1 {
+        background-color: black;
+    }
+
+    .second {
+        position: absolute;
+        bottom: 655px;
+        left: 70px;
+        background-color: transparent;
+        color: white;
+        font-size: 150%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+
+    .third {
+        position: absolute;
+        bottom: 655px;
+        left: 350px;
+        background-color: transparent;
+        color: white;
+        font-size: 150%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+
+    .fourth {
+        position: absolute;
+        bottom: 655px;
+        right: 70px;
+        background-color: transparent;
+        color: white;
+        font-size: 150%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        width: auto;
+    }
+
+    .fifth {
+        position: absolute;
+        bottom: 655px;
+        right: 350px;
+        background-color: transparent;
+        color: white;
+        font-size: 150%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        width: auto;
+    }
+
+    pre {
+        position: absolute;
+        top: 200px;
+        color: white;
+        left: 300px;
+        right: 300px;
+        ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: oblique;
+        font-weight: lighter;
+    }
+
+    .PRE1 {
+        position: absolute;
+        top: 950px;
+        color: white;
+        left: 250px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-weight: lighter;
+        text-align: center;
+        font-size: large;
+        align-self: auto;
+        text-align: center;
+    }
 </style>
+
 <body>
     <style>
-        body {background-color: rgb(30, 30, 30);margin: 0}
+        body {
+            background-color: rgb(30, 30, 30);
+            margin: 0
+        }
     </style>
     <div class="container">
-    <img class="img1" class="img1" src="https://cdn.globalcarsbrands.com/wp-content/uploads/2014/10/Rolls-Royce-Logo.jpg" alt="brand logo" 
-    style="background-color: rgb(30, 30, 30);"
-     height="150px">
-     <PRE>                BOOK YOUR TEST DRIVE IN OUR ALL NEW ROLLS ROYCE SPECTRE.THE MOST LUXURIOUS CAR EVER PRODUCED
+        <img class="img1" class="img1"
+            src="https://cdn.globalcarsbrands.com/wp-content/uploads/2014/10/Rolls-Royce-Logo.jpg" alt="brand logo"
+            style="background-color: rgb(30, 30, 30);" height="150px">
+        <PRE>                BOOK YOUR TEST DRIVE IN OUR ALL NEW ROLLS ROYCE SPECTRE.THE MOST LUXURIOUS CAR EVER PRODUCED
                                        ON THE FACE OF THE EARTH WITH UNPARALLELD LUXURY AND COMFORT</PRE>
-     </div>
-     <div class="fading">
-     <img src="https://autoreader.net/wp-content/uploads/2021/11/3Studiomaindeadfront.png" alt="car image" style="border-radius: 15px;">
-     </div>
-     <PRE class="PRE1">
-         a test drive in the Rolls Royce Spectre is not merely an invitation to experience luxury; it’s an opportunity to step into a world where elegance meets innovation. 
-                 the first all-electric model from Rolls Royce, the Spectre represents a new era in automotive excellence, combining cutting-edge technology with the brand's renowned craftsmanship. 
-                 This breathtaking grand tourer boasts a striking design that captivates at first glance, showcasing sleek lines and a commanding presence on the road.
+    </div>
+    <div class="fading">
+        <img src="https://autoreader.net/wp-content/uploads/2021/11/3Studiomaindeadfront.png" alt="car image"
+            style="border-radius: 15px;">
+    </div>
+    <PRE class="PRE1">
+        a test drive in the Rolls Royce Spectre is not merely an invitation to experience luxury; it’s an opportunity to step
+        into a world where elegance meets innovation.
+        the first all-electric model from Rolls Royce, the Spectre represents a new era in automotive excellence, combining
+        cutting-edge technology with the brand's renowned craftsmanship.
+        This breathtaking grand tourer boasts a striking design that captivates at first glance, showcasing sleek lines and a
+        commanding presence on the road.
         
-        When you take the wheel of the Spectre, you’re not just driving a car; you’re experiencing a sanctuary of comfort and sophistication.
-         The meticulously crafted interior is a testament to Rolls Royce's dedication to perfection, featuring luxurious materials and bespoke options tailored to your personal taste.
-          With its whisper-quiet electric powertrain, the Spectre offers a smooth and serene ride, allowing you to fully immerse yourself in the experience.
+        When you take the wheel of the Spectre, you’re not just driving a car; you’re experiencing a sanctuary of comfort and
+        sophistication.
+        The meticulously crafted interior is a testament to Rolls Royce's dedication to perfection, featuring luxurious
+        materials and bespoke options tailored to your personal taste.
+        With its whisper-quiet electric powertrain, the Spectre offers a smooth and serene ride, allowing you to fully immerse
+        yourself in the experience.
         
-        The performance of the Spectre is equally impressive, delivering seamless acceleration and handling that will leave you breathless.
-         Its advanced engineering ensures that you enjoy not only power but also an eco-conscious driving experience. 
-         Whether you’re navigating city streets or cruising along scenic highways, the Spectre promises a driving experience that is both exhilarating and refined.
+        The performance of the Spectre is equally impressive, delivering seamless acceleration and handling that will leave you
+        breathless.
+        Its advanced engineering ensures that you enjoy not only power but also an eco-conscious driving experience.
+        Whether you’re navigating city streets or cruising along scenic highways, the Spectre promises a driving experience that
+        is both exhilarating and refined.
         
-        Don’t miss your chance to feel the thrill of this automotive masterpiece firsthand. 
-        Booking a test drive in the Rolls Royce Spectre is your gateway to exploring a blend of luxury, performance, and innovation that redefines what it means to drive in style. 
-        Elevate your driving experience—schedule your test drive today and discover the extraordinary</PRE>
+        Don’t miss your chance to feel the thrill of this automotive masterpiece firsthand.
+        Booking a test drive in the Rolls Royce Spectre is your gateway to exploring a blend of luxury, performance, and
+        innovation that redefines what it means to drive in style.
+        Elevate your driving experience.
+        schedule your test drive today and discover the extraordinary</PRE>
 
-
-<button>BOOK NOW</button>
-<button class="second">HOME</button>
-<button class="third">MODELS</button>
-<button class="fourth">BOOK NOW</button>
-<button class="fifth">ABOUT US</button>
+<div class="buttons">
+    <button>BOOK NOW</button>
+    <button class="second">HOME</button>
+    <button class="third">MODELS</button>
+    <button class="fourth">BOOK NOW</button>
+    <button class="fifth">ABOUT US</button>
+</div>
 </body>
 
- 
+
 
 
 </html>
